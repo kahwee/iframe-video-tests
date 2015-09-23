@@ -57,6 +57,7 @@ window.onload = function (e) {
       'Video bytes decoded: ' + v.webkitVideoDecodedByteCount + ' average p/s: ' + videoMean.mean() + '<br>' +
       'Decoded frames: ' + v.webkitDecodedFrameCount + ' average p/s: ' + decodedMean.mean() + ' (' + decodedPerSec + ')<br>' +
       'Dropped frames: ' + v.webkitDroppedFrameCount + ' average p/s: ' + dropMean.mean() + ' (' + droppedFramesPerSec + ')<br>'
+    console.log(d.innerHTML)
   }
 
   setInterval(recalcRates, 1000)

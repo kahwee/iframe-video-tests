@@ -75,8 +75,8 @@
 	  d.innerHTML =
 	        "Audio bytes decoded: " + v.webkitAudioDecodedByteCount + " average p/s: " + audioMean.mean() + "<br>" +
 	        "Video bytes decoded: " + v.webkitVideoDecodedByteCount + " average p/s: " + videoMean.mean() + "<br>" +
-	        "Decoded frames: " + v.webkitDecodedFrameCount + " average p/s: " + decodedMean.mean() + "<br>" +
-	        "Dropped frames: " + v.webkitDroppedFrameCount + " average p/s: " + dropMean.mean() + "<br>";
+	        "Decoded frames: " + v.webkitDecodedFrameCount + " average p/s: " + decodedMean.mean() + "(" + videoBytesDecodedPerSec + ")<br>" +
+	        "Dropped frames: " + v.webkitDroppedFrameCount + " average p/s: " + dropMean.mean() +  "(" + droppedFramesPerSec + ")<br>";
 	}
 
 	setInterval(recalcRates, 1000);
